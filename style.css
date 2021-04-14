@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 3em;
+  height: 100vh;
+  margin: 0;
+}
+
+.bg {
+  background: url("images/BG.png");
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.right,
+.header {
+  display: inline;
+}
+
+.navText {
+  float: right;
+  padding-top: 1em;
+}
+
+.right {
+  text-decoration: none;
+}
+
+.coffeeMain {
+  padding-left: 50px;
+  font-weight: 500;
+  padding-top: 10em;
+}
+h1:after {
+  content: attr(data-text);
+  color: #7b4036;
+  transform: translateX(-100%);
+  position: absolute;
+}
+
+.coffeeText {
+  font-weight: 300;
+}
+
+.about-us {
+  margin-left: 50%;
+  margin-top: 100px;
+}

@@ -9,12 +9,16 @@ body {
   padding: 3em;
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .bg {
   background: url("images/BG.png");
-  position: relative;
+  float: right;
   background-repeat: no-repeat;
+  position: relative;
+  top: -200px;
+  right: -50px;
 }
 
 .right,
@@ -45,9 +49,69 @@ h1:after {
 
 .coffeeText {
   font-weight: 300;
+  width: 50%;
 }
 
 .about-us {
-  margin-left: 50%;
+  float: right;
   margin-top: 100px;
+  width: 50%;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  color: #fff;
+}
+
+.newsletter {
+  padding: 80px 0;
+  background: linear-gradient(0deg, #5a6c76, #5a6c76),
+    linear-gradient(0deg, #87cfd5, #87cfd5),
+    linear-gradient(266.35deg, #87cfd5 0.59%, #36929c 62.74%);
+}
+
+.newsletter .content {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter .content h2 {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.newsletter .content .form-control {
+  height: 50px;
+  width: 40rem;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.input-group {
+  padding-top: 10px;
+}
+
+.newsletter .content .btn {
+  min-height: 50px;
+  border: none;
+  background: #36929c;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100px;
 }

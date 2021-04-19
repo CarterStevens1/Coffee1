@@ -13,12 +13,13 @@ body {
 }
 
 .bg {
-  background: url("images/BG.png");
   float: right;
   background-repeat: no-repeat;
   position: relative;
   top: -200px;
   right: -50px;
+  width: 1000px;
+  height: 780px;
 }
 
 .right,
@@ -33,12 +34,25 @@ body {
 
 .right {
   text-decoration: none;
+  line-height: 21px;
+  color: #000000;
+  margin-left: 30px;
+}
+
+.contact {
+  background: #36929c;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  border: 10px #36929c solid;
+  border-radius: 7px;
 }
 
 .coffeeMain {
   padding-left: 50px;
   font-weight: 500;
   padding-top: 10em;
+  height: 900px;
 }
 h1:after {
   content: attr(data-text);
@@ -47,22 +61,79 @@ h1:after {
   position: absolute;
 }
 
+.moreInfo {
+  background: #36929c;
+  color: #fff;
+  position: relative;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .coffeeText {
   font-weight: 300;
   width: 50%;
 }
 
-.about-us {
-  float: right;
-  margin-top: 100px;
-  width: 50%;
+.top-title {
+  font-weight: 300;
+  font-size: 48px;
+  letter-spacing: 0.05em;
+  line-height: 60px;
+}
+
+.second-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.sub-coffee {
+  color: #757575;
+}
+
+.instalink {
+  color: #36929c;
+}
+
+.about-section,
+.about-Img {
+  float: left;
+  margin-right: 15px;
+}
+
+.menu {
+  padding-left: 10%;
+  padding-top: 600px;
+  padding-bottom: 166px;
+}
+
+h3.menu-class {
+  padding-top: 2em;
 }
 
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 10px;
+  padding-right: 10rem;
+  transform: translateX(-10px);
+}
+
+.column-background {
+  background: #36929c;
+}
+
+.left {
+  border-right: 1px solid #e8e8e8;
+  margin-right: 20px;
 }
 
 /* Clear floats after the columns */
@@ -76,11 +147,22 @@ h1:after {
   color: #fff;
 }
 
+.price {
+  float: right;
+  margin-right: -140px;
+}
+.price,
+.drink {
+  display: inline;
+}
+
 .newsletter {
   padding: 80px 0;
   background: linear-gradient(0deg, #5a6c76, #5a6c76),
     linear-gradient(0deg, #87cfd5, #87cfd5),
     linear-gradient(266.35deg, #87cfd5 0.59%, #36929c 62.74%);
+  width: 2000px;
+  transform: translateX(-50px);
 }
 
 .newsletter .content {
@@ -102,6 +184,10 @@ h1:after {
   color: #ffffff;
 }
 
+.content {
+  transform: translateX(-150px);
+}
+
 .input-group {
   padding-top: 10px;
 }
@@ -114,4 +200,67 @@ h1:after {
   font-weight: 500;
   font-size: 18px;
   width: 100px;
+}
+
+.img-17 {
+  position: absolute;
+  width: 308px;
+  height: 616px;
+  left: 304px;
+  top: 2938px;
+}
+
+.img-15 {
+  position: absolute;
+  width: 308px;
+  height: 308px;
+  left: 612px;
+  top: 3246px;
+}
+
+.img-14 {
+  position: absolute;
+  width: 308px;
+  height: 308px;
+  left: 612px;
+  top: 2938px;
+}
+
+.img-11 {
+  position: absolute;
+  width: 308px;
+  height: 308px;
+  left: 920px;
+  top: 2938px;
+}
+
+.img-13 {
+  position: absolute;
+  width: 616px;
+  height: 308px;
+  left: 920px;
+  top: 3246px;
+}
+
+.img-10 {
+  position: absolute;
+  width: 308px;
+  height: 308px;
+  left: 1228px;
+  top: 2938px;
+}
+
+.foot {
+  background: #36929c;
+  height: 70px;
+  width: 2000px;
+  transform: translateX(-50px);
+  margin-top: 800px;
+}
+
+.footer-text {
+  padding-left: 30px;
+  color: #fff;
+  font-size: small;
+  padding-top: 30px;
 }

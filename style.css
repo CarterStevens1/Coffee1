@@ -13,13 +13,10 @@ body {
 }
 
 .bg {
-  float: right;
+  background: url("images/BG.png");
   background-repeat: no-repeat;
-  position: relative;
-  top: -200px;
-  right: -50px;
-  width: 1000px;
-  height: 780px;
+
+  background-position: right;
 }
 
 .right,
@@ -37,6 +34,8 @@ body {
   line-height: 21px;
   color: #000000;
   margin-left: 30px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .contact {
@@ -53,6 +52,7 @@ body {
   font-weight: 500;
   padding-top: 10em;
   height: 900px;
+  margin-bottom: 100px;
 }
 h1:after {
   content: attr(data-text);
@@ -102,6 +102,17 @@ h1:after {
   color: #36929c;
 }
 
+.about-Img {
+  padding-right: 50px;
+}
+
+h1.about-h1 {
+  margin-top: -30px;
+  font-size: 54px;
+  line-height: 63px;
+  font-weight: normal;
+}
+
 .about-section,
 .about-Img {
   float: left;
@@ -134,6 +145,7 @@ h3.menu-class {
 .left {
   border-right: 1px solid #e8e8e8;
   margin-right: 20px;
+  height: 120px;
 }
 
 /* Clear floats after the columns */
@@ -177,11 +189,13 @@ h3.menu-class {
   margin-bottom: 40px;
 }
 .newsletter .content .form-control {
-  height: 50px;
+  height: 51px;
   width: 40rem;
   border: none;
   background: rgba(0, 0, 0, 0.1);
   color: #ffffff;
+  font-size: large;
+  outline: none;
 }
 
 .content {
@@ -200,54 +214,57 @@ h3.menu-class {
   font-weight: 500;
   font-size: 18px;
   width: 100px;
+  outline: none;
+  cursor: pointer;
+  transform: translateX(-3px);
 }
 
 .img-17 {
-  position: absolute;
+  position: relative;
   width: 308px;
   height: 616px;
-  left: 304px;
-  top: 2938px;
+  left: 104px;
+  top: 158px;
 }
 
 .img-15 {
-  position: absolute;
+  position: relative;
   width: 308px;
   height: 308px;
-  left: 612px;
-  top: 3246px;
+  left: 100px;
+  top: 159px;
 }
 
 .img-14 {
-  position: absolute;
+  position: relative;
   width: 308px;
   height: 308px;
-  left: 612px;
-  top: 2938px;
+  left: -212px;
+  top: -147px;
 }
 
 .img-11 {
-  position: absolute;
+  position: relative;
   width: 308px;
   height: 308px;
-  left: 920px;
-  top: 2938px;
+  left: -216px;
+  top: -147px;
 }
 
 .img-13 {
-  position: absolute;
+  position: relative;
   width: 616px;
   height: 308px;
-  left: 920px;
-  top: 3246px;
+  left: 720px;
+  top: -153px;
 }
 
 .img-10 {
-  position: absolute;
+  position: relative;
   width: 308px;
   height: 308px;
-  left: 1228px;
-  top: 2938px;
+  left: 408px;
+  top: -459px;
 }
 
 .foot {
@@ -255,7 +272,6 @@ h3.menu-class {
   height: 70px;
   width: 2000px;
   transform: translateX(-50px);
-  margin-top: 800px;
 }
 
 .footer-text {
@@ -263,4 +279,9 @@ h3.menu-class {
   color: #fff;
   font-size: small;
   padding-top: 30px;
+}
+
+.foot-text {
+  font-size: 48px;
+  line-height: 56px;
 }
